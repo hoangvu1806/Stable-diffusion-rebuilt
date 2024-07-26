@@ -1,0 +1,29 @@
+conda create --prefix ./env python=3.11
+conda activate env
+conda install -c conda-forge diffusers transformers safetensors
+conda list --export > requirements.txt
+
+Tạo một tệp README.md với nội dung mô tả dự án của bạn. Ví dụ:
+
+
+# Stable Diffusion Image Generation
+
+This project demonstrates how to create and train a Stable Diffusion model for image generation from text descriptions.
+
+## Setup
+
+### Conda Environment
+
+To set up the conda environment, run:
+
+```bash
+conda create --prefix ./env python=3.8
+conda activate ./env
+conda install -c conda-forge diffusers transformers safetensors
+
+
+Installing Dependencies
+To install the required dependencies, run:
+
+conda activate ./env
+pip install -r requirements.txt
