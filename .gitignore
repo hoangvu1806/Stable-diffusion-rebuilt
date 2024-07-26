@@ -101,6 +101,10 @@ venv.bak/
 .envrc
 .env.*
 
+# Saved Models
+models--Salesforce--blip-image-captioning-base
+.locks
+
 # Spyder project settings
 .spyderproject
 .spyproject
