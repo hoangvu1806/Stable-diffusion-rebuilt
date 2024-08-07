@@ -99,9 +99,9 @@ def save_descriptions_to_json(descriptions, output_json):
     print(f"Descriptions saved to {output_json}")
 
 def main():
-    image_folder = "E:/Stable Diffusion rebuild/datasets/images"
-    output_json = "./datasets/captions.json"
-    cache_dir = "E:/Stable Diffusion rebuild/saved_models"
+    image_folder = "E:/Stable_Diffusion_rebuild/datasets/faces/16000"
+    output_json = "./datasets/caption_faces.json"
+    cache_dir = "E:/Stable_Diffusion_rebuild/saved_models"
 
     os.makedirs(cache_dir, exist_ok=True)
 

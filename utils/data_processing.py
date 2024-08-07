@@ -1,8 +1,9 @@
 import os
 from PIL import Image
+from tqdm import tqdm
 
 # Đường dẫn đến dữ liệu
-data_dir = r"E:\Stable Diffusion rebuild\datasets\images_resized"
+data_dir = r"E:\Stable_Diffusion_rebuild\datasets\faces\18000"
 
 def resize_images(image_dir, size=(512, 512)):
     if not os.path.exists(image_dir):
@@ -27,7 +28,7 @@ def crop_images(image_dir, target_size=(512, 512)):
         print(f"Directory {image_dir} does not exist.")
         return
 
-    for filename in os.listdir(image_dir):
+    for filename in tqdm(os.listdir(image_dir)):
         if filename.endswith(".jpg") or filename.endswith(".png"):
             img_path = os.path.join(image_dir, filename)
             try:
@@ -53,7 +54,7 @@ def crop_images(image_dir, target_size=(512, 512)):
                     # Resize ảnh thành 512x512
                     img = img.resize(target_size)
                     img.save(img_path)
-                    print(f"Cropped to square and resized {filename}")
+                    # print(f"Cropped to square and resized {filename}")
             except Exception as e:
                 print(f"Error processing {filename}: {e}")
 

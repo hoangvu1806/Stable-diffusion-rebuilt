@@ -7,8 +7,8 @@ This project aims to build a Stable Diffusion model using PyTorch. The model con
 ### stable_diffusion_rebuilt_project/
 - │
 - ├── data/
-- │ ├── raw/ # Thư mục chứa dữ liệu thô
-- │ ├── processed/ # Thư mục chứa dữ liệu đã được tiền xử lý
+- │ ├── images/ # Thư mục chứa ảnh thô
+- │ ├── captions.json
 - │
 - ├── models/
 - │ ├── vae.py # File định nghĩa mô hình VAE

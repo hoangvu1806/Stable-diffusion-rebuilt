@@ -2,9 +2,14 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+tempCodeRunnerFile.py
 # C extensions
 *.so
+*.jpg
+*.png
+*.packaging
+*.pth
+*.json
 
 # Distribution / packaging
 .Python

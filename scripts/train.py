@@ -60,7 +60,7 @@ for epoch in range(n_epochs):
 
         real_imgs = imgs.cuda()
         
-        # Đào tạo Generator
+        # Training Generator
         optimizer_G.zero_grad()
         z = torch.randn(imgs.size(0), latent_dim).cuda()
         gen_imgs = generator(z)
